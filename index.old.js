@@ -82,7 +82,7 @@ app.post("/api/", (req, res) => {
 
     // Ha létezik a deadline kulcsszó alatti érték, ellenőrizzük a formátumát -> error
     if ("deadline" in reqItem) {
-      if (typeof reqItem.done !== "string") error = true;
+      if (typeof reqItem.deadline !== "string") error = true;
     }
 
     // ha nem megfelelő a kulcs -> error
