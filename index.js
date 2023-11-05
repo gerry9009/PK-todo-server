@@ -5,6 +5,7 @@ const app = express();
 // az oldalra
 const cors = require("cors");
 
+// bodyParser -> http POST request-ek kezelése miatt szükséges
 const bodyParser = require("body-parser");
 
 const port = 8008;
