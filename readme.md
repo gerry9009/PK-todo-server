@@ -41,17 +41,17 @@ A következő HTTP metódusokat támogatja az alkalmazás:
 
 A szerver felé beküldött adatoknak `JSON` formátumban kell lenniük és az alábbi kulcsokat támogatják:
 
-`id`: Az elem egyedi azonosítója (`number`) - / ezt nem lehet módosítani /
-`task`: Feladat leírása (`string`) - / kötelező megadni `POST` metódusnál /
-`done`: Feladat státusza (`true` vagy `false`, alapértelmezett: `false`) - / nem szükséges megadni `POST` metódusnál /
-`deadline`: Feladat határideje (`string`, pl.: "2023-12-31") - / nem szükséges megadni `POST` metódusnál /
+- `id`: Az elem egyedi azonosítója (`number`) - / ezt nem lehet módosítani /
+- `task`: Feladat leírása (`string`) - / kötelező megadni `POST` metódusnál /
+- `done`: Feladat státusza (`true` vagy `false`, alapértelmezett: `false`) - / nem szükséges megadni `POST` metódusnál /
+- `deadline`: Feladat határideje (`string`, pl.: "2023-12-31") - / nem szükséges megadni `POST` metódusnál /
 
 ## Endpointok
 
 ### Összes elem lekérdezése
 
-_URL_ : `/api/`
-_METÓDUS_ : `GET`
+- _URL_ : `/api/`
+- _METÓDUS_ : `GET`
 
 `PÉLDA`:
 
@@ -91,8 +91,8 @@ _METÓDUS_ : `GET`
 
 ### Egy elem lekérdezése ID alapján
 
-_URL_ : `/api/:id`
-_METÓDUS_ : `GET`
+- _URL_ : `/api/:id`
+- _METÓDUS_ : `GET`
 
 `PÉLDA`:
 
@@ -119,8 +119,8 @@ const lekérdezniKívántElemID = 2
 
 ### Új elem hozzáadása
 
-_URL_ : `/api/`
-_METÓDUS_ : `POST`
+- _URL_ : `/api/`
+- _METÓDUS_ : `POST`
 
 `PÉLDA`:
 
@@ -157,8 +157,8 @@ const header = {
 
 ### Meglévő elem módosítása ID alapján
 
-_URL_ : `/api/:id`
-_METÓDUS_ : `PATCH`
+- _URL_ : `/api/:id`
+- _METÓDUS_ : `PATCH`
 
 `PÉLDA`:
 
@@ -196,8 +196,8 @@ const header = {
 
 ### Elem törlése ID alapján
 
-_URL_ : `/api/:id`
-_METÓDUS_ : `DELETE`
+- _URL_ : `/api/:id`
+- _METÓDUS_ : `DELETE`
 
 `PÉLDA`:
 
@@ -230,8 +230,8 @@ const header = {
 
 ### Nem létező endpoint
 
-_URL_ : `*`
-_METÓDUS_ : `GET`
+- _URL_ : `*`
+- _METÓDUS_ : `GET`
 
 `PÉLDA`:
 
